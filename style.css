@@ -1,7 +1,13 @@
 .page-body{
     font-family: 'Sora', sans-serif;
-    /* display:flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
 h1{
     font-size:24px;
     color: #f9faf8;
@@ -71,7 +77,6 @@ ul{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
 }
 li{
     display: flex;
@@ -103,15 +108,15 @@ li{
 .example{
     border-radius: 20px;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    width:100%;
+	height:100%;
 }
 .image{
-    height: 400px; 
-    width: 400px;
+    height: 300px; 
+    width: 300px; 
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+       
 }
 .images-party{
     display: flex;
@@ -119,28 +124,33 @@ li{
     gap: 100px;
     flex-wrap: wrap;
 }
-.content-third{
+.quote-container{
     display: flex;
     flex-direction: column;
-    object-fit: cover;
-    width: 100%;
     justify-content:center;
     align-items: center;
-    padding: 100px;
+
+}
+.content-third{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #author{
     color: #354254;
-    margin-left: 300px;
+    align-self: flex-end;
 }
 .modal{
     display: flex;
-    max-width: 40%;
+    max-width: 45%;
     border-color: #3882f6;
     border-width: 10px;
     border-style:solid;
     border-radius: 50px;
     background-color: #3882f6;
-    padding: 15px;
+    padding: 25px;
     gap: 15px;
 }
 .modal-text{
@@ -160,4 +170,7 @@ li{
     display: flex;
     align-items: center;
     justify-content:center;
+}
+h3{
+   font-size: 26px; 
 }
