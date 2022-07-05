@@ -9,9 +9,20 @@ h1{
 .header,
 .container-main,
 .footer-copyright{
+    background-color: #1f2937;
     padding-left: 150px;
     padding-right: 150px;
-    background-color: #1f2937;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.content-secondary
+{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px ;
 }
 p, li{
     font-size: 18px;
@@ -32,8 +43,7 @@ button{
  font-size: 20px;
 
 }
-button:hover{
-background-color: #1f2937;
+button:hover{background-color: #1f2937;
 }
 .h3{
     font-size: 36px;
@@ -68,4 +78,66 @@ li{
 }
 .front-page{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main-photo{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}  
+.front-photo{
+    height: 350px; 
+    width: 700px;
+}
+
+.example{
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.image{
+    height: 400px; 
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.images-party{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.content-third{
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    padding: 100px;
+}
+#author{
+    color: #354254;
+    margin-left: 300px;
+}
+.modal{
+    display:flex;
+    border-color: #3882f6;
+    border-width: 10px;
+    border-style:solid;
+    border-radius: 50px;
+    background-color: #3882f6;
+    padding: 5%;
+    
 }
